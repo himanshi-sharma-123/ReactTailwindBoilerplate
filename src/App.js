@@ -1,10 +1,9 @@
-import DemoComponent from "./DemoComponent";
-
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div>
-   <DemoComponent />
+      <Navbar />
     </div>
   );
 }
