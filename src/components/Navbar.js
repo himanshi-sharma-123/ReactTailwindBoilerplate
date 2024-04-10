@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import logo from "../assets/logo.png";
 import { TbWorldWww } from "react-icons/tb";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDown, faCaretDown } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
@@ -12,13 +12,12 @@ const Navbar = () => {
     <div className="flex lg:flex-row lg:items-center lg:justify-between">
       <div className="relative flex flex-row items-center justify-between">
         <img src={logo} alt="Logo" />
-
         <div
           className={`${
             showMenu ? "block" : "hidden"
-          }  lg:flex flex-col lg:flex-row lg:gap-10 w-full lg:w-auto absolute top-28 left-4 lg:static`}
+          }  fixed top-4 left-0 h-full bg-white flex flex-col items-start justify-start w-64 p-4 lg:flex lg:flex-row lg:gap-10 lg:w-auto  lg:static`}
         >
-          <ul className="flex flex-col lg:flex-row lg:gap-10">
+          <ul className="flex flex-col gap-4 lg:flex-row">
             <li>
               Creation
               <FontAwesomeIcon icon={faAngleDown} />{" "}
@@ -34,7 +33,7 @@ const Navbar = () => {
             </li>
           </ul>
           <span className="hidden lg:block">|</span>
-          <ul className="flex flex-col lg:flex-row lg:gap-10">
+          <ul className="flex flex-col gap-4 lg:flex-row">
             <li>Enterprise</li>
             <li>Pricing</li>
             <li>Support</li>
@@ -69,51 +68,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-// import React from "react";
-// import logo from "../assets/logo.png";
-// import { TbWorldWww } from "react-icons/tb";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
-
-// const Navbar = () => {
-//   return (
-//     <div className="lg:flex flex-col lg:flex-row lg:items-center lg:justify-between">
-//       <div className="lg:flex flex-col lg:flex-row items-center ">
-//         <img src={logo} alt="" />
-//         <div className="lg:flex flex-col lg:flex-row lg:gap-10">
-//           {" "}
-//           <ul className="lg:flex flex-col lg:flex-row lg:gap-10">
-//             <li>
-//               Creation
-//               <FontAwesomeIcon icon={faCaretDown} />{" "}
-//             </li>
-//             <li>
-//               Business <FontAwesomeIcon icon={faCaretDown} />{" "}
-//             </li>
-//             <li>
-//               Growth <FontAwesomeIcon icon={faCaretDown} />{" "}
-//             </li>
-//             <li>
-//               Resources <FontAwesomeIcon icon={faCaretDown} />{" "}
-//             </li>
-//           </ul>
-//           <span className="hidden lg:block">|</span>
-//           <ul className="lg:flex flex-col lg:flex-row gap-10">
-//             <li>Enterprise</li>
-//             <li>Pricing</li>
-//             <li>Support</li>
-//           </ul>
-//         </div>
-//       </div>
-//       <div className="lg:flex flex-col lg:flex-row items-center gap-4">
-//         <TbWorldWww style={{ height: 30, width: 50 }} />
-//         <button className="bg-white text-blue-500 border-2 border-blue-500 hover:bg-[#FF92A5] hover:text-black hover:border-black py-3 px-10 rounded-full cursor-pointer mr-4">
-//           Sign in
-//         </button>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Navbar;
