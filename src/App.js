@@ -1,4 +1,5 @@
 import Business from "./components/Business";
+import Faq from "./components/Faq";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Payment from "./components/Payment";
@@ -12,6 +13,7 @@ function App() {
       <Table />
       <Business />
       <Payment />
+      <Faq />
     </div>
   );
 }
