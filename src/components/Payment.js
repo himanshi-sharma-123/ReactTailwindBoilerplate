@@ -22,9 +22,9 @@ const Payment = () => {
         </p>
       </div>
       <hr className="mt-7" />
-      <div className="flex lg:flex-row md:flex-row flex-col mt-10 px-20 justify-between overflow-x-hidden">
-        <div className="">
-          <div>Accepted Payments</div>
+      <div className="flex lg:flex-row md:flex-row flex-col mt-10 px-20 justify-between">
+        <div className="items-center text-center">
+          <div className="ml-4">Accepted Payments Methods</div>
           <div className="flex flex-row">
             <img src={visa} alt="" width={60} height={60} />
             <img src={mastercard} alt="" width={60} height={60} />
