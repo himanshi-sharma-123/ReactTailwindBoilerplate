@@ -15,7 +15,7 @@ const Navbar = () => {
         <div
           className={`${
             showMenu ? "block" : "hidden"
-          }  fixed top-4 left-0 h-full bg-white flex flex-col items-start justify-start w-64 p-4 lg:flex lg:flex-row lg:gap-10 lg:w-auto  lg:static`}
+          }  fixed top-0 left-0 h-full bg-white flex flex-col items-start justify-start w-64 p-4 lg:flex lg:flex-row lg:gap-10 lg:w-auto lg:static`}
         >
           <ul className="flex flex-col gap-4 lg:flex-row">
             <li>
@@ -43,7 +43,7 @@ const Navbar = () => {
       <div
         className={`${
           showMenu ? "block" : "hidden"
-        } lg:flex flex-col lg:flex-row items-center gap-4 absolute lg:static top-72`}
+        } fixed lg:flex flex-col lg:flex-row items-center gap-4 lg:static top-72`}
       >
         <TbWorldWww style={{ height: 30, width: 50 }} />
         <button className="bg-white text-blue-500 border-2 border-blue-500 hover:bg-[#FF92A5] hover:text-black hover:border-black py-3 px-10 rounded-full cursor-pointer lg:mr-4 mr-1">
