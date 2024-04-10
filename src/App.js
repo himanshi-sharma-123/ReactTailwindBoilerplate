@@ -1,5 +1,6 @@
 import Business from "./components/Business";
 import Faq from "./components/Faq";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Payment from "./components/Payment";
@@ -14,6 +15,7 @@ function App() {
       <Business />
       <Payment />
       <Faq />
+      <Footer />
     </div>
   );
 }
