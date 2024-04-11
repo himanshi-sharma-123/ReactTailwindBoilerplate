@@ -46,7 +46,7 @@ const Navbar = () => {
         } fixed lg:flex flex-col lg:flex-row items-center gap-4 lg:static top-72`}
       >
         <TbWorldWww style={{ height: 30, width: 50 }} />
-        <button className="bg-white text-blue-500 border-2 border-blue-500 hover:bg-[#FF92A5] hover:text-black hover:border-black py-3 px-10 rounded-full cursor-pointer lg:mr-4 mr-1">
+        <button className="bg-white text-blue-500 border-2 border-blue-500 hover:bg-[#6c7bf4] hover:text-black hover:border-black py-3 px-10 rounded-full cursor-pointer lg:mr-4 mr-1">
           Sign in
         </button>
       </div>

@@ -102,7 +102,7 @@ const Table = () => {
         <thead className="">
           <tr>
             <th className="border border-gray-300 px-4 py-6"></th>
-            <th className="border border-gray-300 px-4 py-20 hover:bg-gray-200 group">
+            <th className="border border-gray-300 px-4 py-20 hover:bg-gray-200 group cursor-pointer">
               <div className="">
                 <h1 className="">VIP</h1>
                 <p className="font-light">First Priority Support</p>
@@ -110,7 +110,7 @@ const Table = () => {
                 <h1>500 py6./month</h1>
               </div>
             </th>
-            <th className="border border-gray-300 px-4 py-2 hover:bg-gray-200 group">
+            <th className="border border-gray-300 px-4 py-2 hover:bg-gray-200 group cursor-pointer">
               <div>
                 <h1>Unlimited</h1>
                 <p className="font-light">Enterpreneurs & Freelancers</p>
@@ -118,7 +118,7 @@ const Table = () => {
                 <h1>250 py6./month</h1>
               </div>
             </th>
-            <th className="border border-gray-300 px-4 py-2 hover:bg-gray-200 group">
+            <th className="border border-gray-300 px-4 py-2 hover:bg-gray-200 group cursor-pointer">
               <div>
                 <h1>Combo</h1>
                 <p className="font-light">First Personal Use</p>
@@ -126,7 +126,7 @@ const Table = () => {
                 <h1>150 py6./month</h1>
               </div>
             </th>
-            <th className="border border-gray-300 px-4 py-2 hover:bg-gray-200 group">
+            <th className="border border-gray-300 px-4 py-2 hover:bg-gray-200 group cursor-pointer">
               <div>
                 <h1>Connect Domain</h1>
                 <p className="font-light">Most Basic</p>
@@ -151,16 +151,16 @@ const Table = () => {
                   <div className="text-sm">{item.side}</div>
                 </div>
               </td>
-              <td className="border border-gray-300 px-10 py-2 items-center text-center justify-center hover:bg-gray-200 group">
+              <td className="border border-gray-300 px-10 py-2 items-center text-center justify-center hover:bg-gray-200 group cursor-pointer">
                 {item.first}
               </td>
-              <td className="border border-gray-300 px-10 py-2 items-center text-center justify-center hover:bg-gray-200 group">
+              <td className="border border-gray-300 px-10 py-2 items-center text-center justify-center hover:bg-gray-200 group cursor-pointer">
                 {item.second}
               </td>
-              <td className="border border-gray-300 px-10 py-2 items-center text-center justify-center hover:bg-gray-200 group">
+              <td className="border border-gray-300 px-10 py-2 items-center text-center justify-center hover:bg-gray-200 group cursor-pointer">
                 {item.third}
               </td>
-              <td className="border border-gray-300 px-10 py-2 items-center text-center justify-center hover:bg-gray-200 group">
+              <td className="border border-gray-300 px-10 py-2 items-center text-center justify-center hover:bg-gray-200 group cursor-pointer">
                 {item.fourth}
               </td>
             </tr>

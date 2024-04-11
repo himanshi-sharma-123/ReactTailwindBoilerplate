@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="bg-[#ddd6fe] h-80">
+    <div className="bg-[#ebe7fc] h-80">
       <div className="items-center justify-center lg:ml-80 md:ml-40 py-7">
         <div className="lg:text-4xl md:text-4xl text-3xl font-bold lg:ml-60 md:ml-60 ml-20">
           Wix Premium Plans

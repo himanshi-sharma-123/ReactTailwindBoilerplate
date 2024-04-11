@@ -4,7 +4,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 const Business = () => {
   return (
     <div className="mt-10">
-      <div className="bg-purple-200 ml-20 mr-20 items-center justify-center px-10 py-10">
+      <div className="bg-[#ebe7fc] ml-20 mr-20 items-center justify-center px-10 py-10">
         <h1 className="text-xl font-bold">Business & eCommerce plans</h1>
         <div className="py-5">
           {" "}
