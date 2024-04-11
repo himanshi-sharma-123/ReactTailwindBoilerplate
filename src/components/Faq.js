@@ -43,10 +43,17 @@ const faqs = [
 const Faq = () => {
   const [showAnswer, setShowAnswer] = useState(false);
 
+  const toggleAnswer = (id) => {
+    setShowAnswer((prevState) => ({
+      ...prevState,
+      [id]: !prevState[id],
+    }));
+  };
+
   return (
     <div className="mt-4 bg-gray-100">
       <div className="flex lg:flex-row md:flex-row flex-col py-20 px-20 gap-40">
-        <div className="px-10">
+        <div className="lg:px-10">
           <h1 className="font-bold text-4xl">Frequently Asked</h1>
           <h1 className="font-bold text-4xl">Questions</h1>
           <p className="text-sm">Haven't found what you're looking</p>
@@ -55,28 +62,27 @@ const Faq = () => {
             or <span className="text-blue-500">Contact Us</span>
           </p>
         </div>
-
         <div className="">
           {faqs.map((faq) => (
-            <div className=" bg-gray-100 flex flex-col " key={faq.id}>
+            <div className=" bg-gray-100 flex flex-col">
               <article className="flex items-center justify-between py-6 border-gray-400 border-t">
                 <h2
                   className="cursor-pointer font-bold"
-                  onClick={() => setShowAnswer(!showAnswer)}
+                  onClick={() => toggleAnswer(faq.id)}
                 >
                   {faq.ques}
                 </h2>
                 <ul>
-                  {!showAnswer && (
+                  {!showAnswer[faq.id] && (
                     <li>
-                      <button onClick={() => setShowAnswer(true)}>
+                      <button onClick={() => toggleAnswer(faq.id)}>
                         <MdKeyboardArrowDown />
                       </button>
                     </li>
                   )}
-                  {showAnswer && (
+                  {showAnswer[faq.id] && (
                     <li>
-                      <button onClick={() => setShowAnswer(false)}>
+                      <button onClick={() => toggleAnswer(faq.id)}>
                         <MdKeyboardArrowUp />
                       </button>
                     </li>
@@ -84,8 +90,10 @@ const Faq = () => {
                 </ul>
               </article>
 
-              <article className={`${showAnswer} py-3`}>
-                {showAnswer && <p>{faq.ans}</p>}
+              <article
+                className={`${showAnswer[faq.id] ? "block" : "hidden"} py-3`}
+              >
+                {showAnswer[faq.id] && <p>{faq.ans}</p>}
               </article>
             </div>
           ))}
