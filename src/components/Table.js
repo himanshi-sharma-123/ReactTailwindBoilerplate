@@ -143,7 +143,7 @@ const Table = () => {
             <tr key={item.id}>
               <td className="border border-gray-300 px-3 py-2">
                 <div>
-                  <div className="flex fex-row justify-between items-center">
+                  <div className="flex fex-row justify-between items-center text-sm">
                     {" "}
                     {item.content}
                     <IoIosInformationCircleOutline />
